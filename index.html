@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Mi estilo-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>MERN 02 POO</title>
+  </head>
+  <body>
+    <nav class="nav_principal"></nav>
+    <div class="contenedor_primario" id="contendor_1">
+      <div class="contenedor_secundario" id="contendor_2">
+        <div class="contendor_buscador" id="buscador">
+          <h1>Sistema de Encuestas</h1>
+          <input
+            type="text"
+            class="input_buscar"
+            placeholder="Ingrese Usuario"
+          />
+          <button id="btn-primario" class="btn-primario">Ingrese</button>
+          <button id="btn-secundario" class="btn-primario">
+            Ver Registros
+          </button>
+        </div>
+
+        <div class="contenedor_encuesta_master">
+          <div class="contenedor_encuesta"></div>
+        </div>
+
+        <div class="contenedor_finaliza_master">
+          <div class="contenedor_finaliza">
+            <h1>Sistema de Encuestas</h1>
+            <h2>Gracias por responder la encuesta</h2>
+            <button id="btn-volver" class="btn-primario">
+              Volver al incio
+            </button>
+          </div>
+        </div>
+
+        <div class="contendor_registros_master">
+          <div class="contenedor_registro">
+            <h1>Registro Encuestas</h1>
+            <button id="btn-volver-inicio" class="btn-primario">
+              Volver Inicio
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,500&family=Londrina+Solid:wght@100;400&family=Titan+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #f7ef6a;
+  --color-bg-variant: #93c178;
+  --color-bg-transparent: rgba(255, 255, 255, 0.747);
+  --color-primary: #465c8b;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #dfdce3;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-darker: rgba(112, 104, 104, 0.3);
+
+  --transition: all 600ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --gridList-column: 250px;
+  --gridList-rows: 250px;
+  --gridList-gap: 6px;
+}
+
+body {
+  font-family: "Londrina Solid", cursive;
+  background: var(--color-bg);
+  color: var(--color-primary);
+  line-height: 1.7;
+  background-image: url(../img/bg-texture.png);
+}
+.nav_principal {
+  background: var(--color-bg-transparent);
+  height: 3rem;
+}
+.contenedor_primario {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.contenedor_secundario {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 2%;
+}
+
+.contendor_buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-bg-transparent);
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.input_buscar {
+  width: 50%;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  resize: none;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Londrina Solid", cursive;
+}
+
+.btn-primario {
+  font-family: "Londrina Solid", cursive;
+  width: max-content;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn-primario:hover {
+  background: var(--color-bg-variant);
+  color: var(--color-light);
+  border-color: transparent;
+}
+
+.contenedor_encuesta_master {
+  display: none;
+}
+
+.contenedor_encuesta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--color-bg-transparent);
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+}
+.question_options {
+  font-size: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.question_titulo {
+  text-align: center;
+}
+
+.option {
+  padding: 0.5rem 1rem;
+}
+
+.option:hover {
+  background-color: var(--color-primary-variant) ;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.siguiente_pregunta {
+  font-family: "Londrina Solid", cursive;
+  width: max-content;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+.siguiente_pregunta:hover {
+  background: var(--color-bg-variant);
+  color: var(--color-light);
+  border-color: transparent;
+}
+.hidden {
+  display: none;
+}
+.deshabilita {
+  display: none;
+}
+.contenedor_finaliza {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-bg-transparent);
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+}
+.contenedor_finaliza_master {
+  display: none;
+}
+.contendor_registros_master{
+  display: none;
+  padding-bottom: 10px;
+}
+.contenedor_registro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-bg-transparent);
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+}
+.titulo_encuesta{
+  background-color: var(--color-light) ;
+  border: 2px solid var(--color-darker);
+  border-radius: 2px;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.titulo_pregunta{
+  background-color: var(--color-primary-variant) ;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.titulo_option{
+  font-size:15px;
+  padding: 0.5rem;
+}
